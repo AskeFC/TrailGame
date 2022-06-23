@@ -199,7 +199,7 @@ socket.on("data", function(data) {
 });
 
 socket.on("newName", function(data) {
-	console.log("Sever changed your name to " + data.name);
+	console.log("Server changed your name to " + data.name);
 	document.getElementById("nameInput").value = data.name;
 });
 
