@@ -7,7 +7,8 @@
     "node": ">6.11.1"
   },
   "scripts": {
-    "start": "node app.js"
+    "nodestart": "node app.js",
+    "bunstart": "bun app.js"
   },
   "repository": {
     "type": "git",
