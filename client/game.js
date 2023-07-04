@@ -1,3 +1,5 @@
+'use strict';
+
 var uiVisible = false;
 var uiDiv = document.getElementById("uiDiv");
 var canvas = document.getElementById('ctx');
