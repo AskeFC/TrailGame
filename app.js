@@ -19,7 +19,6 @@ const __dirname = path.dirname(__filename);
 
 //---------- Server settings ----------
 const MAX_SOCKET_ACTIVITY_PER_SECOND = 500;
-const sendData = true;
 const port = process.env.PORT || 80;
 //-------------------------------------
 
@@ -46,6 +45,7 @@ let PLAYER_LIST = {};
 let TRAIL_LIST = {};
 
 let gameStarted, inCountdown, waiting = false;
+let sendData = true;
 let countdown = 10;
 let lastWinner = "";
 let lastWinnerID = -1.0;
