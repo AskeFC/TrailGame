@@ -2,6 +2,7 @@
 
 import express from 'express';
 import http from 'node:http';
+import { Server } from 'socket.io';
 import colors from 'colors/safe.js';
 
 import { fileURLToPath } from 'url';
