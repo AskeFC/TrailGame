@@ -62,8 +62,8 @@ function mouseClick(e) {
 		} while ((element = element.offsetParent));
 	}
 
-	x = (e.pageX - offsetX) - window.innerWidth / 2;
-	y = (e.pageY - offsetY) - window.innerHeight / 2;
+	const x = (e.pageX - offsetX) - window.innerWidth / 2;
+	const y = (e.pageY - offsetY) - window.innerHeight / 2;
 	if (x > y && x > 200) {
 		socket.emit('keyPress', {
 			inputId: 'right',
@@ -263,8 +263,8 @@ document.onkeyup = function(event) {
 }
 
 function mouseMove(e) {
-	mx = Math.round(e.clientX / window.innerWidth * 1200);
-	my = Math.round(e.clientY / window.innerHeight * 600);
+	// mx = Math.round(e.clientX / window.innerWidth * 1200);
+	// my = Math.round(e.clientY / window.innerHeight * 600);
 	if (e.clientY < window.innerHeight - 70 && uiVisible && !document.getElementById("mlock").checked) {
 		unfocus();
 		uiVisible = false;
