@@ -1,16 +1,17 @@
 'use strict';
 
 import express from 'express';
-import { createServer } from 'http';
+import http from 'node:http';
 import { Server } from 'socket.io';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import colors from 'colors/safe.js';
+
+import { fileURLToPath } from 'url';
+import path from 'path';
 
 //var wildcard = require('socketio-wildcard')();
 
 const app = express();
-const serv = createServer(app);
+const serv = http.createServer(app);
 const io = new Server(serv);
 
 const __filename = fileURLToPath(import.meta.url);
